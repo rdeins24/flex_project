@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-size: 16px;
+    line-height: 16px;
+    color: black;
+    background: #a1c3ff;
+}
+
+img{
+    max-width: 100%;
+}
+h1,h2{
+    margin-bottom: 15px;
+}
+
+ul{
+list-style-type: none;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.navBar{
+    background: #3474eb;
+    color: aliceblue;
+    height: 60px;
+}
+.logo{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.navBar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navBar a:hover{
+    color: lightblue;
+}
+
+.navBar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.navBar ul{
+    display: flex;
+}
+.navBar li{
+    margin-left: 20px;
+}
+
+.header{
+    background-color: #0151cc;
+    color: white;
+    min-height: 400px;
+}
+
+.header h1{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height:1.3;
+}
+
+.header img{
+    max-width: 400px;
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boxes .container{
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    flex: 1;
+    background-color: #0151cc;
+    color: white;
+    border-radius: 10px;
+    margin: 20px 10px;
+    padding: 15px 20px;
+}
+
+box i {
+    margin-right: 10px;
+}
+
+@media(max-width: 768px){
+
+    /* --one wayfor media querry is to give flex direction column*/
+    .header .container{
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+/* second way to do media querry is to display block*/
+    .boxes .container{
+      display: block;
+      text-align: center;
+    }
+
+}
